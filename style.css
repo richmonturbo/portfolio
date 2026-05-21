@@ -46,6 +46,18 @@ body {
 
 .card {
   cursor: pointer;
+   background: #1f2937;   /* THIS is the box color */
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.25s;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #9ca3af;
 }
 
 .card:hover {
