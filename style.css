@@ -200,18 +200,15 @@ a.button {
 }
 
 .image-card {
+  overflow: hidden;
   position: relative;
-  cursor: pointer;
 }
 
-.image-card::after {
-  content: "Click to view more";
-  position: absolute;
-  bottom: 8px;
-  right: 10px;
-  font-size: 12px;
-  color: #9ca3af;
-  background: rgba(0,0,0,0.5);
-  padding: 3px 6px;
-  border-radius: 6px;
+.image-card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
 }
