@@ -8,52 +8,42 @@
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Projects</h1>
+<header class="hero">
+  <h1>Projects</h1>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-	  <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section class="section fade-in">
+<section class="section fade-in">
 
-    <div class="grid">
+  <div class="grid">
 
-<div class="card image-card">
-  <img src="images/project1.JPG">
+    <!-- PROJECT 1 -->
+    <div class="card image-card" data-images="images/project1.JPG,images/project1-1.JPG,images/project1-2.JPG,images/project1-3.JPG,images/project1-4.JPG">
+      <img src="images/project1.JPG">
 
-  <div class="image-set"
-    data-images="images/project1.JPG,images/project1-1.JPG,images/project1-2.JPG,images/project1-3.JPG,images/project1-4.JPG">
+      <div class="arrow left" onclick="changeImage(this, -1)">❮</div>
+      <div class="arrow right" onclick="changeImage(this, 1)">❯</div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card image-card" data-images="images/project2.JPG,images/project2-1.JPG,images/project2-2.JPG">
+      <img src="images/project2.JPG">
+
+      <div class="arrow left" onclick="changeImage(this, -1)">❮</div>
+      <div class="arrow right" onclick="changeImage(this, 1)">❯</div>
+    </div>
+
   </div>
 
-  <div class="arrow left" onclick="changeImage(this, -1)">❮</div>
-  <div class="arrow right" onclick="changeImage(this, 1)">❯</div>
-</div>
+</section>
 
-    <div class="card image-card">
-  <img src="images/project2.JPG">
-
-  <div class="image-set"
-    data-images="images/project2.JPG,images/project2-1.JPG,images/project2-2.JPG">
-  </div>
-
-  <div class="arrow left" onclick="changeImage(this, -1)">❮</div>
-  <div class="arrow right" onclick="changeImage(this, 1)">❯</div>
-</div>
-		
-</div>
-	  
-  </section>
-
-  <div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img">
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
