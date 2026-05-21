@@ -93,3 +93,11 @@ a.button {
   color: inherit;
   display: block;
 }
+
+.text-box {
+  max-width: 800px;
+  background: #1f2937;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 12px auto;
+}
