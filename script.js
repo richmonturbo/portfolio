@@ -81,4 +81,3 @@ function changeImage(arrow, direction) {
   card.dataset.index = index;
   img.src = images[index];
 }
-}
