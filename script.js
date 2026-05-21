@@ -11,6 +11,7 @@ function closeLightbox() {
   if (lb) lb.style.display = "none";
 }
 
+function openModal(type) {
 const data = {
   maintenance: {
     title: "Maintenance",
