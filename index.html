@@ -34,35 +34,35 @@
 
   <div class="grid">
 
-    <div class="card">
-      <h3>Maintenance</h3>
-      <p>Preventative maintenance, repairs, and ongoing property upkeep.</p>
-    </div>
+   <div class="card" onclick="openModal('maintenance')">
+  <h3>Maintenance</h3>
+  <p>Preventative maintenance and repairs.</p>
+</div>
 
-    <div class="card">
-      <h3>Construction</h3>
-      <p>Light construction, installations, and structural improvements.</p>
-    </div>
+   <div class="card" onclick="openModal('construction')">
+  <h3>Construction</h3>
+  <p>Light construction, installations, and structural improvements.</p>
+</div>
 
-    <div class="card">
-      <h3>Handyman Work</h3>
-      <p>General repairs, fixtures, assembly, and troubleshooting.</p>
-    </div>
+    <div class="card" onclick="openModal('handyman')">
+  <h3>Handyman</h3>
+  <p>General repairs, fixtures, assembly, and troubleshooting.</p>
+</div>
 
-    <div class="card">
-      <h3>Property Management Support</h3>
-      <p>Assisting with inspections, maintenance coordination, and tenant-ready repairs.</p>
-    </div>
+   <div class="card" onclick="openModal('management')">
+  <h3>Property Management Support</h3>
+  <p>Assisting with inspections, maintenance coordination, and tenant-ready repairs.</p>
+</div>
 
-    <div class="card">
-      <h3>Repairs & Troubleshooting</h3>
-      <p>Diagnosing issues and delivering practical repair solutions quickly and efficiently.</p>
-    </div>
-
-    <div class="card">
-      <h3>Installation Services</h3>
-      <p>Appliances, fixtures, hardware, and general installation work for residential and commercial spaces.</p>
-    </div>
+  <div class="card" onclick="openModal('repairs')">
+  <h3>Repairs & Troubleshooting</h3>
+  <p>Diagnosing issues and delivering practical repair solutions quickly and efficiently.</p>
+</div>
+    
+   <div class="card" onclick="openModal('installation')">
+  <h3>Installation </h3>
+  <p>Appliances, fixtures, hardware, and general installation work for residential and commercial spaces.</p>
+</div>
 
   </div>
 </section>
@@ -99,6 +99,14 @@
   <footer>
     <p>© 2026 Richard Monjaraz</p>
   </footer>
+
+  <div id="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <img id="modal-img">
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+  </div>
+</div>
 
 </body>
 </html>
