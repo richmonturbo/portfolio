@@ -198,3 +198,20 @@ a.button {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.image-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.image-card::after {
+  content: "Click to view more";
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 12px;
+  color: #9ca3af;
+  background: rgba(0,0,0,0.5);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
