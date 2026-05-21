@@ -12,35 +12,49 @@ function closeLightbox() {
 }
 
 function openModal(type) {
-const data = {
-  maintenance: {
-    title: "Maintenance",
-    img: "images/maintenance.png",
-    text: "Preventative maintenance and repairs focused on long-term reliability."
-  },
-  construction: {
-    title: "Construction",
-    img: "images/construction.png",
-    text: "Light construction and structural improvements."
-  },
-  handyman: {
-    title: "Handyman Work",
-    img: "images/handyman.png",
-    text: "General repairs and troubleshooting."
-  },
-  management: {
-    title: "Management",
-    img: "images/management.png",
-    text: "Coordinating workflow and overseeing projects."
-  },
-  repairs: {
-    title: "Repairs & Troubleshooting",
-    img: "images/repairs.png",
-    text: "Diagnosing and fixing issues efficiently."
-  },
-  installation: {
-    title: "Installation Services",
-    img: "images/installation.png",
-    text: "Fixtures, appliances, and hardware installation."
-  }
-};
+  const modal = document.getElementById("modal");
+  const img = document.getElementById("modal-img");
+  const title = document.getElementById("modal-title");
+  const text = document.getElementById("modal-text");
+
+  const data = {
+    maintenance: {
+      title: "Maintenance",
+      img: "images/maintenance.png",
+      text: "Preventative maintenance and repairs focused on long-term reliability."
+    },
+    construction: {
+      title: "Construction",
+      img: "images/construction.png",
+      text: "Light construction and structural improvements."
+    },
+    handyman: {
+      title: "Handyman Work",
+      img: "images/handyman.png",
+      text: "General repairs and troubleshooting."
+    },
+    management: {
+      title: "Management",
+      img: "images/management.png",
+      text: "Coordinating workflow and overseeing projects."
+    },
+    repairs: {
+      title: "Repairs & Troubleshooting",
+      img: "images/repairs.png",
+      text: "Diagnosing and fixing issues efficiently."
+    },
+    installation: {
+      title: "Installation Services",
+      img: "images/installation.png",
+      text: "Fixtures, appliances, and hardware installation."
+    }
+  };
+
+  const item = data[type];
+  if (!item) return;
+
+  title.textContent = item.title;
+  img.src = item.img;
+  text.textContent = item.text;
+
+  modal.style.display = "flex";
