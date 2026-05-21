@@ -21,7 +21,7 @@ function openModal(type) {
     maintenance: {
       title: "Maintenance",
       img: "images/maintenance.png",
-      text: "Preventative maintenance and repairs focused on long-term reliability."
+      text: "Preventative maintenance and repairs."
     },
     construction: {
       title: "Construction",
@@ -29,24 +29,24 @@ function openModal(type) {
       text: "Light construction and structural improvements."
     },
     handyman: {
-      title: "Handyman Work",
+      title: "Handyman",
       img: "images/handyman.png",
       text: "General repairs and troubleshooting."
     },
     management: {
       title: "Management",
       img: "images/management.png",
-      text: "Coordinating workflow and overseeing projects."
+      text: "Coordinating workflow and oversight."
     },
     repairs: {
-      title: "Repairs & Troubleshooting",
+      title: "Repairs",
       img: "images/repairs.png",
-      text: "Diagnosing and fixing issues efficiently."
+      text: "Diagnosing and fixing issues."
     },
     installation: {
-      title: "Installation Services",
+      title: "Installation",
       img: "images/installation.png",
-      text: "Fixtures, appliances, and hardware installation."
+      text: "Fixtures and hardware installation."
     }
   };
 
@@ -61,5 +61,6 @@ function openModal(type) {
 }
 
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  const modal = document.getElementById("modal");
+  if (modal) modal.style.display = "none";
 }
