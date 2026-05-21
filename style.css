@@ -40,15 +40,6 @@ body {
   margin-bottom: 12px;
 }
 
-.section p {
-  max-width: 800px;
-  width: 100%;
-  background: #1f2937;
-  padding: 15px 18px;
-  border-radius: 12px;
-  margin: 8px 0;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -115,8 +106,9 @@ a.button {
 
 .text-box {
   max-width: 800px;
+  width: 100%;
   background: #1f2937;
-  padding: 18px;
+  padding: 15px 18px;
   border-radius: 12px;
-  margin: 12px auto;
+  margin: 8px 0;
 }
