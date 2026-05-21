@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Richard Monjaraz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Projects</h1>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+	  <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section fade-in">
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="images/project1.png" onclick="openLightbox(this.src)">
+        <h3>Project One</h3>
+      </div>
+
+      <div class="card">
+        <img src="images/project2.png" onclick="openLightbox(this.src)">
+        <h3>Project Two</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
