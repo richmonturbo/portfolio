@@ -65,16 +65,20 @@ function closeModal() {
   if (modal) modal.style.display = "none";
 }
 
-function nextImage(card) {
+function changeImage(arrow, direction) {
+  const card = arrow.closest(".image-card");
   const img = card.querySelector("img");
-  const set = card.querySelector(".image-set");
 
-  const images = set.dataset.images.split(",");
-  let current = img.src.split("/").pop();
+  const images = card.dataset.images.split(",");
 
-  let index = images.findIndex(i => current.includes(i.split("/").pop()));
+  let index = parseInt(card.dataset.index || 0);
 
-  index = (index + 1) % images.length;
+  index += direction;
 
+  if (index < 0) index = images.length - 1;
+  if (index >= images.length) index = 0;
+
+  card.dataset.index = index;
   img.src = images[index];
+}
 }
