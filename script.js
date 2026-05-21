@@ -26,7 +26,7 @@ function openModal(type) {
     construction: {
       title: "Construction",
       img: "images/construction.png",
-      text: "Light construction and structural improvements."
+      text: "Light construction and improvements."
     },
     handyman: {
       title: "Handyman",
@@ -36,7 +36,7 @@ function openModal(type) {
     management: {
       title: "Management",
       img: "images/management.png",
-      text: "Coordinating workflow and oversight."
+      text: "Workflow coordination and oversight."
     },
     repairs: {
       title: "Repairs",
