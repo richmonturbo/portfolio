@@ -45,14 +45,12 @@ body {
 }
 
 .card {
-  background: #1f2937;
-  padding: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
+  transition: 0.2s;
 }
 
 .card img {
