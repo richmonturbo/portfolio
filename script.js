@@ -64,3 +64,17 @@ function closeModal() {
   const modal = document.getElementById("modal");
   if (modal) modal.style.display = "none";
 }
+
+function nextImage(card) {
+  const img = card.querySelector("img");
+  const set = card.querySelector(".image-set");
+
+  const images = set.dataset.images.split(",");
+  let current = img.src.split("/").pop();
+
+  let index = images.findIndex(i => current.includes(i.split("/").pop()));
+
+  index = (index + 1) % images.length;
+
+  img.src = images[index];
+}
