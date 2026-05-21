@@ -223,14 +223,17 @@ a.button {
   cursor: pointer;
   opacity: 0;
   transition: 0.2s;
+  z-index: 5; /* ensures they sit above image */
 }
 
 .arrow.left {
   left: 10px;
+  right: auto;   /* IMPORTANT */
 }
 
 .arrow.right {
   right: 10px;
+  left: auto;    /* IMPORTANT */
 }
 
 .image-card:hover .arrow {
