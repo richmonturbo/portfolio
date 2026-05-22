@@ -82,15 +82,17 @@ function changeImage(arrow, direction) {
   img.src = images[index];
 }
 
-const backToTop = document.getElementById("backToTop");
+window.addEventListener("DOMContentLoaded", function () {
 
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 200) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-};
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
 
 function scrollToTop() {
   window.scrollTo({
