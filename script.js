@@ -84,8 +84,6 @@ function changeImage(arrow, direction) {
 
 window.addEventListener("DOMContentLoaded", function () {
 
-  window.addEventListener("DOMContentLoaded", function () {
-
   const backToTop = document.getElementById("backToTop");
 
   window.addEventListener("scroll", function () {
@@ -97,7 +95,6 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
