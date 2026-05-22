@@ -231,6 +231,7 @@ a.button {
   right: auto;   /* IMPORTANT */
 }
 
+
 .arrow.right {
   right: 10px;
   left: auto;    /* IMPORTANT */
@@ -238,4 +239,19 @@ a.button {
 
 .image-card:hover .arrow {
   opacity: 1;
+}
+@media (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .section {
+    padding: 25px 15px;
+  }
+
 }
