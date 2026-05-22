@@ -252,7 +252,9 @@ a.button {
     padding: 25px 15px;
   }
 
-}
+  .text-box {
+    max-width: 90%;
+  }
 
 .container {
   width: 100%;
