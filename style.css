@@ -142,12 +142,13 @@ a.button {
 }
 .icon {
   display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .text-box:hover .icon {
   transform: scale(1.2) rotate(5deg);
   color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 }
 .job {
   margin-top: 12px;
