@@ -167,7 +167,7 @@ a.button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  row-gap: 35px;
+  row-gap: 50px;
   max-width: 900px;
   width: 100%;
   margin: 20px auto;
