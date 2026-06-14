@@ -163,6 +163,23 @@ a.button {
   color: #38bdf8;
   text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 }
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.capability-grid .card {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
 
 .job {
   margin-top: 12px;
