@@ -23,11 +23,11 @@ function openModal(type) {
       img: "images/maintenance.png",
       text: "Preventative maintenance and repairs."
     },
-    construction: {
-      title: "Construction",
-      img: "images/construction.png",
-      text: "Light construction and improvements."
-    },
+    design: {
+  title: "Design",
+  img: "images/design.png",
+  text: "Design concepts, space planning, material choices, and creative solutions that balance appearance, function, and durability."
+},
     handyman: {
       title: "Handyman",
       img: "images/handyman.png",
