@@ -198,8 +198,13 @@ a.button {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.image-card {
+.image-wrapper {
+  position: relative;
   overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-card {
   position: relative;
 }
 
@@ -207,7 +212,6 @@ a.button {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
