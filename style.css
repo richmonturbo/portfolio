@@ -198,14 +198,16 @@ a.button {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .image-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-}
-
-.image-card {
-  position: relative;
 }
 
 .image-card img {
@@ -230,18 +232,15 @@ a.button {
   cursor: pointer;
   opacity: 0;
   transition: 0.2s;
-  z-index: 5; /* ensures they sit above image */
+  z-index: 5;
 }
 
 .arrow.left {
   left: 10px;
-  right: auto;   /* IMPORTANT */
 }
-
 
 .arrow.right {
   right: 10px;
-  left: auto;    /* IMPORTANT */
 }
 
 .image-card:hover .arrow {
