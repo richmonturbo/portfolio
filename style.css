@@ -60,6 +60,7 @@ body {
 
 .card:hover {
   transform: translateY(-6px);
+  background: #2d4f74;
   box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
