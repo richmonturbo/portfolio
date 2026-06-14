@@ -18,21 +18,23 @@ function openModal(type) {
   const text = document.getElementById("modal-text");
 
   const data = {
-    maintenance: {
-      title: "Maintenance",
-      img: "images/maintenance.png",
-      text: "Preventative maintenance and repairs."
-     },
-    design: {
-  title: "Design",
-  img: "images/design.png",
-  text: "Design concepts, space planning, material choices, and creative solutions that balance appearance, function, and durability."
-     },
-    handyman: {
-      title: "Handyman",
-      img: "images/handyman.png",
-      text: "General repairs and troubleshooting."
-    },
+  maintenance: {
+    title: "Maintenance",
+    img: "images/maintenance.png",
+    text: "Preventative maintenance and repairs."
+  },
+
+  design: {
+    title: "Design",
+    img: "images/design.png",
+    text: "Design concepts, space planning, material choices, and creative solutions that balance appearance, function, and durability."
+  },
+
+  handyman: {
+    title: "Handyman",
+    img: "images/handyman.png",
+    text: "General repairs and troubleshooting."
+  },
     management: {
       title: "Management",
       img: "images/management.png",
