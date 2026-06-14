@@ -22,12 +22,12 @@ function openModal(type) {
       title: "Maintenance",
       img: "images/maintenance.png",
       text: "Preventative maintenance and repairs."
-    },
+     },
     design: {
   title: "Design",
   img: "images/design.png",
   text: "Design concepts, space planning, material choices, and creative solutions that balance appearance, function, and durability."
-},
+     },
     handyman: {
       title: "Handyman",
       img: "images/handyman.png",
