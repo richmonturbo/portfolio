@@ -33,7 +33,7 @@ function openModal(type) {
   handyman: {
     title: "Handyman",
     img: "images/handyman.png",
-    text: "General repairs and troubleshooting."
+    text: "On the job know how and experience"
   },
     management: {
       title: "Management",
