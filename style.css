@@ -178,7 +178,6 @@ a.button {
   .capability-grid {
     grid-template-columns: 1fr;
   }
-}
 .job {
   margin-top: 12px;
   padding-top: 10px;
@@ -317,7 +316,6 @@ a.button {
   .text-box {
     max-width: 90%;
   }
-}
 .container {
   width: 100%;
   max-width: 900px;
