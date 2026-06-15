@@ -29,16 +29,45 @@
   </div>
 
   <div class="text-box">
-    <h2>Send a Message</h2>
+  <h2>Send a Message</h2>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <form 
+  class="contact-form"
+  action="https://formspree.io/f/mqeowrkg"
+  method="POST">
 
-  </div>
+  <input type="hidden" name="_next" value="https://richardmonjaraz.org/thanks.html">
+    
+    <input 
+      type="text" 
+      name="name"
+      placeholder="Your Name" 
+      required>
+
+    <input 
+      type="email" 
+      name="email"
+      placeholder="Your Email" 
+      required>
+
+	  <input 
+  type="text"
+  name="_gotcha"
+  style="display:none">
+
+    <textarea 
+      name="message"
+      placeholder="Your Message"
+      rows="5"
+      required></textarea>
+
+   <button type="submit" id="submitBtn">
+  Send Message
+</button>
+
+  </form>
+
+</div>
 
 </section>
 
