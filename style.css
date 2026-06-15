@@ -41,10 +41,16 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   align-items: start;
+}
+ .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
   width: 100%;
   max-width: 1400px;
+  align-items: start;
 }
-  
+
 .card {
   background: #1f2937;
   border: 1px solid #374151;
