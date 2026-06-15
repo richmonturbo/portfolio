@@ -103,14 +103,47 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector(".contact-form");
-  const button = document.getElementById("submitBtn");
+const form = document.getElementById("contactForm");
 
-  if (form && button) {
-    form.addEventListener("submit", () => {
-      button.textContent = "Sending...";
-      button.disabled = true;
-    });
-  }
-});
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const button = document.getElementById("submitBtn");
+    const status = document.getElementById("formStatus");
+
+    button.textContent = "Sending...";
+    button.disabled = true;
+
+    try {
+      const response = await fetch("https://formspree.io/f/mqeowrkg", {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      if (response.ok) {
+        status.textContent = "✓ Message sent successfully!";
+        status.style.color = "#22c55e";
+
+        form.reset();
+
+        setTimeout(() => {
+          window.location.href = "thanks.html";
+        }, 1500);
+
+      } else {
+        throw new Error("Form submission failed");
+      }
+
+    } catch (error) {
+      status.textContent = "Error sending message. Please try again.";
+      status.style.color = "#ef4444";
+
+      button.textContent = "Send Message";
+      button.disabled = false;
+    }
+  });
+}
