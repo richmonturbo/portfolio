@@ -41,6 +41,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
   align-items: start;
+  width: 100%;
+  max-width: 1400px;
 }
   
 .card {
