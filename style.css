@@ -182,6 +182,7 @@ a.button {
   .capability-grid {
     grid-template-columns: 1fr;
   }
+}
 
 .job {
   margin-top: 12px;
@@ -240,12 +241,6 @@ a.button {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
-}
-
-/* Animation */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Animation */
@@ -321,6 +316,7 @@ a.button {
   .text-box {
     max-width: 90%;
   }
+}
 
 .container {
   width: 100%;
