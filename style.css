@@ -42,6 +42,11 @@ body {
   gap: 20px;
   align-items: start;
 }
+
+.grid .card {
+  min-height: 180px;
+}
+
  .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
