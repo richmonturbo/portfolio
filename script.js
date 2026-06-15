@@ -103,3 +103,14 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".contact-form");
+  const button = document.getElementById("submitBtn");
+
+  if (form && button) {
+    form.addEventListener("submit", () => {
+      button.textContent = "Sending...";
+      button.disabled = true;
+    });
+  }
+});
